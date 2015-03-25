@@ -1,5 +1,5 @@
 var functor = require('./lib/functor').functor;
-var fmap = require('fmap').fmap;
+var fmap = require('./lib/fmap').fmap;
 
 exports = module.exports = functor;
 
