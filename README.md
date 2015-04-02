@@ -33,6 +33,7 @@ function Maybe(val) {
 
 function logName(obj) {
   console.log(obj.name);
+  return obj;
 }
 
 var somePromise = getUserFromServer();
