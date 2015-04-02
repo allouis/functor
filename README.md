@@ -25,7 +25,7 @@ Nothing.prototype.fmap = function () { return Nothing() };
 function Just(val) {
   this.val = val;
 }
-Just.prototype.fmap = function () { return Maybe(fn(this.val)) }
+Just.prototype.fmap = function (fn) { return Maybe(fn(this.val)) }
 
 function Maybe(val) {
   return val == null ? Nothing() : Just(val)
